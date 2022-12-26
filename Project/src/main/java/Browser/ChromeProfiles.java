@@ -21,7 +21,7 @@ public class ChromeProfiles
 		//Set driverpath to the location of browser drivers
 		//Using chromedriver application which is compatible with current chrome version 108
 		
-		String driverpath = "E:\\Pooja\\Study\\\\Selenium\\QTPSELENIUM\\SETUP Files\\drivers\\chromedriver.exe";
+		String driverpath = "...\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", driverpath);
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY,"logs\\chrome.log");
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
@@ -31,7 +31,7 @@ public class ChromeProfiles
 		options.addArguments("--disable-notifications");
 		options.addArguments("--start-maximized");
 		options.addArguments("ignore-certificate-errors");
-		options.addArguments("user-data-dir=C:\\Users\\hp\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1");
+		options.addArguments("user-data-dir=.....\\Google\\Chrome\\User Data\\Profile 1"); //provide path of your profile
 		
 		WebDriver driver = new ChromeDriver(options);
 		
